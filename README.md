@@ -16,6 +16,9 @@ Usage
 2. Getting a report in pdf format
 
 	```
+	import jasper
+	j = jasper.JasperClient(host='jasperserver',port=8080,org='organization_1',username='jasperadmin',password='password')
+	j.get_report(reportPath='public/MyCompanyReport',data='MONTH=1&YEAR=2014')
 	```
 
 
